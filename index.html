@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="src/master.css">
+</head>
+
+<body>
+    <div class="player">
+        <!-- Left: Album Art -->
+        <div class="cover" id="coverSection">
+            <img id="coverImage" src="" alt="Album Cover">
+            <div class="song-title" id="songTitle"></div>
+        </div>
+
+        <!-- Right: Controls and Playlist -->
+        <div class="controls">
+            <div>
+                <audio id="audio"></audio>
+
+                <div class="main-controls">
+                    <button id="prev">⏮</button>
+                    <button id="play">▶</button>
+                    <button id="next">⏭</button>
+                </div>
+
+                <div class="progress">
+                    <span id="currentTime">0:00</span>
+                    <input type="range" id="progressBar" min="0" max="100" value="0">
+                    <span id="totalTime">0:00</span>
+                </div>
+
+                <div class="volume">
+                    🔊 <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1">
+                </div>
+                
+                <div class="playlist" id="playlist"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="src/script.js"></script>
+</body>
+
+</html>
